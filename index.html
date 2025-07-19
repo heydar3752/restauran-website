@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستوران نود | غذای ایرانی اصیل</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
+</head>
+<body class="light-mode">
+    <!-- دکمه حالت تاریک -->
+    <div class="theme-switcher">
+        <button id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- هدر سایت -->
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x60?text=رستوران+نود" alt="رستوران نود">
+        </div>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#home">صفحه اصلی</a></li>
+                <li><a href="#menu">منوی غذاها</a></li>
+                <li><a href="#trays">سینی‌های ویژه</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- بخش اصلی (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>رستوران نود</h1>
+            <p>تجربه طعم اصیل ایرانی با بهترین کیفیت</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">مشاهده منو</a>
+                <a href="#trays" class="btn btn-outline">سینی‌های ویژه</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش منوی غذاها -->
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>منوی غذاها</h2>
+        </div>
+        <div class="menu-container">
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="menu-carousel">
+                <!-- آیتم‌های منو از طریق جاوااسکریپت پر می‌شود -->
+            </div>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+        </div>
+    </section>
+
+    <!-- بخش سینی‌های ویژه -->
+    <section id="trays" class="tray-section">
+        <div class="section-title">
+            <h2>سینی‌های ویژه</h2>
+        </div>
+        <div class="tray-container">
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="tray-carousel">
+                <!-- آیتم‌های سینی‌ها از طریق جاوااسکریپت پر می‌شود -->
+            </div>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+        </div>
+    </section>
+
+    <!-- بخش درباره ما -->
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>درباره رستوران نود</h2>
+        </div>
+        <div class="about-content">
+            <p>رستوران نود در سال ۱۳۹۰ با هدف ارائه غذاهای اصیل ایرانی با بالاترین کیفیت تأسیس شد.</p>
+            <p>در رستوران نود، کیفیت غذا و رضایت مشتری در اولویت اول ما قرار دارد.</p>
+            <p>ما افتخار داریم که در طول این سال‌ها توانسته‌ایم سهم کوچکی در معرفی غذاهای ایرانی داشته باشیم.</p>
+        </div>
+    </section>
+
+    <!-- بخش تماس با ما -->
+    <section id="contact" class="contact-section">
+        <div class="section-title">
+            <h2>تماس با ما</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>اطلاعات تماس</h3>
+                <p><i class="fas fa-map-marker-alt"></i> آدرس: بزرگراه آبادان - اهواز</p>
+                <p><i class="fas fa-phone"></i> تلفن: ۰۹۰۰۵۴۴۹۰۹۰</p>
+                <p><i class="fas fa-envelope"></i> ایمیل: info@nood-restaurant.ir</p>
+                
+                <h3>ساعات کاری</h3>
+                <p>شنبه تا چهارشنبه: ۱۰ ظهر تا ۱۱ شب</p>
+                <p>پنجشنبه و جمعه: ۱۰ ظهر تا ۱۱ شب</p>
+            </div>
+            <form class="contact-form">
+                <h3>فرم تماس</h3>
+                <input type="text" placeholder="نام و نام خانوادگی">
+                <input type="email" placeholder="ایمیل">
+                <input type="tel" placeholder="شماره تماس">
+                <textarea placeholder="پیام شما" rows="5"></textarea>
+                <button type="submit" class="btn">ارسال پیام</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- فوتر سایت -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>رستوران نود</h3>
+                <p>ارائه دهنده بهترین غذاهای ایرانی</p>
+            </div>
+            <div>
+                <h3>لینک‌های سریع</h3>
+                <ul>
+                    <li><a href="#home">صفحه اصلی</a></li>
+                    <li><a href="#menu">منوی غذاها</a></li>
+                    <li><a href="#trays">سینی‌های ویژه</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>شبکه‌های اجتماعی</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© ۱۴۰۲ تمامی حقوق برای رستوران نود محفوظ است.</p>
+        </div>
+    </footer>
+
+    <!-- سبد خرید -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>سبد خرید شما</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>جمع کل:</span>
+                <span id="cartTotal">۰ تومان</span>
+            </div>
+            
+            <!-- بخش آدرس و نقشه -->
+            <div class="address-section">
+                <h4>آدرس تحویل سفارش</h4>
+                <div id="address-search-container">
+                    <input type="text" id="address-search" placeholder="جستجوی آدرس...">
+                    <button id="use-current-location"><i class="fas fa-location-arrow"></i> موقعیت فعلی</button>
+                </div>
+                <textarea id="delivery-address" placeholder="آدرس دقیق خود را وارد کنید"></textarea>
+                <div id="map" style="height: 250px; margin: 10px 0;"></div>
+            </div>
+            
+            <button class="btn checkout-btn" id="checkoutBtn">تکمیل سفارش</button>
+        </div>
+    </div>
+
+    <!-- دکمه سبد خرید -->
+    <div class="cart-btn-container">
+        <button class="cart-btn" id="openCart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    <!-- پنل مدیریت -->
+    <div class="admin-panel">
+        <button class="admin-btn" id="adminBtn"><i class="fas fa-user-shield"></i></button>
+    </div>
+
+    <div class="admin-modal" id="adminModal">
+        <!-- محتوای پنل مدیریت -->
+    </div>
+
+    <!-- اعلان سفارش موفق -->
+    <div id="order-success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>سفارش شما با موفقیت ثبت شد!</h2>
+            <p id="order-details"></p>
+            <p>سفارش شما در حال آماده‌سازی است و به زودی ارسال خواهد شد.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
